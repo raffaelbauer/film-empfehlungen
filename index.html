@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raffaels Film- und Serienempfehlungen">
+    <title>Raffaels Film- und Serienempfehlungen</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 3rem;
+            padding: 3rem;
+        }
+        .category {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 350px;
+            transition: transform 0.3s ease-in-out;
+            min-height: 350px;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+        }
+        .category h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .category ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+        .category li {
+            margin-bottom: 2rem;
+        }
+        .category li strong {
+            color: #1abc9c;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 2.4rem;
+            }
+            .category {
+                width: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .category {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raffaels Film- und Serienempfehlungen</h1>
+    </header>
+    <main class="container">
+        <!-- Filme -->
+        <div class="category">
+            <h2>Filme</h2>
+            <ul>
+                <li><strong>The Green Mile</strong> – Ein emotionales Drama, das das Leben von Gefängnisinsassen erzählt, darunter der mysteriöse John Coffey, der übernatürliche Kräfte besitzt und in einer Todeszelle sitzt.<br>
+                    Ansehen auf: Prime Video, Apple TV, Google Play Movies, Magenta TV<br>
+                    <a href="https://www.youtube.com/watch?v=6h8bT50qZjA">Trailer auf YouTube</a>
+                </li>
+                <li><strong>The Hangover 1, 2 & 3</strong> – Die chaotische Reise einer Gruppe von Freunden, die immer wieder in absurde Situationen geraten, nachdem sie bei einem Junggesellenabschied ihre Erinnerungen verlieren.<br>
+                    Ansehen auf: Netflix, Apple TV, Amazon Video, Google Movies<br>
+                    <a href="https://www.youtube.com/watch?v=tcdUhdOlz9M">Trailer von The Hangover</a>
+                </li>
+                <li><strong>Interstate 60</strong> – Ein junger Mann, der auf einer seltsamen Reise durch Amerika neue Perspektiven auf das Leben und seine Zukunft entdeckt, alles beeinflusst von einem geheimnisvollen Fremden.<br>
+                    Ansehen auf: DVD oder illegale Webseiten<br>
+                    <a href="https://www.youtube.com/watch?v=E5w7go9kPEo">Trailer auf YouTube</a>
+                </li>
+                <li><strong>Leave the World Behind</strong> – Ein fesselnder Thriller, der das Ende der Welt behandelt und zeigt, wie sich eine Familie inmitten eines globalen Zusammenbruchs behaupten muss. Achtung, dieser Film endet mit vielen offenen Fragen.<br>
+                    Ansehen auf: Netflix<br>
+                    <a href="https://www.youtube.com/watch?v=ktI6eJzvNR0">Trailer auf YouTube</a>
+                </li>
+                <li><strong>Mr. Popper's Penguins</strong> – Ein Geschäftsmann, dessen Leben sich drastisch verändert, als er eine Gruppe von Pinguinen in seine Wohnung aufnimmt und lernt, was es bedeutet, Verantwortung zu übernehmen.<br>
+                    Ansehen auf: Disney+, Apple TV, Amazon Video, Google Movies<br>
+                    <a href="https://www.youtube.com/watch?v=Ph0Iz0yGvw0">Trailer auf YouTube</a>
+                </li>
+                <li><strong>Der Junge im gestreiften Pyjama</strong> – Ein rührendes und zugleich erschütterndes Drama über die Freundschaft eines deutschen Jungen und eines jüdischen Gefangenen im Zweiten Weltkrieg.<br>
+                    Ansehen auf: Netflix, Apple TV, Amazon Video, Google Movies, Paramount Plus<br>
+                    <a href="https://www.youtube.com/watch?v=R2ggFTTfiPQ">Trailer auf YouTube</a>
+                </li>
+                <li><strong>School Survival: Die schlimmsten Jahre meines Lebens</strong> – Ein humorvoller Film über die Abenteuer eines Teenagers, der versucht, das Schulleben zu überstehen und mit den Herausforderungen des Erwachsenwerdens zurechtzukommen.<br>
+                    Ansehen auf: Netflix<br>
+                    <a href="https://www.youtube.com/watch?v=wz-a6g0mc6I">Trailer auf YouTube</a>
+                </li>
+                <li><strong>Knallharte Jungs</strong> – Ein unkonventioneller Film, der die Geschichte von Jugendlichen erzählt, die in der Pubertät mit vielen Problemen kämpfen, darunter auch das Verlangen nach Aufregung und Herausforderungen.<br>
+                    Ansehen auf: Netflix, Apple TV, Amazon Video, Google Movies (Nicht mit Eltern schauen, da sehr anstößig)<br>
+                    <a href="https://www.youtube.com/watch?v=tMmr6B2W7Kk">Trailer auf YouTube</a>
+                </li>
+                <li><strong>Steig nicht aus</strong> – Ein fesselnder Thriller, der sich um die emotionalen und physischen Konflikte von Personen dreht, die gezwungen sind, ihre Komfortzone zu verlassen, um zu überleben.<br>
+                    Ansehen auf: Netflix, Apple TV, Amazon Video, Magenta TV, Google Play Movies<br>
+                    <a href="https://www.youtube.com/watch?v=9LHVtIKy0H4">Trailer auf YouTube</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Serien -->
+        <div class="category">
+            <h2>Serien</h2>
+            <ul>
+                <li><strong>Manifest</strong> – Ein packender Thriller über ein Flugzeug, das nach fünf Jahren plötzlich ohne Erklärung zurückkehrt. Die Passagiere müssen sich mit den Folgen und den geheimen Kräften auseinandersetzen, die ihr Leben beeinflussen.<br>
+                    Ansehen auf: Netflix, Apple TV, Amazon Video<br>
+                    <a href="https://www.youtube.com/watch?v=Oiyf7QsEgwE">Trailer auf YouTube</a>
+                </li>
+                <li><strong>The End of the F***ing World</strong> – Die düstere, aber humorvolle Serie über die Reise von zwei Jugendlichen, die sich auf einem dunklen Abenteuer wiederfinden und sich selbst und ihre Beziehung hinterfragen.<br>
+                    Ansehen auf: Netflix<br>
+                    <a href="https://www.youtube.com/watch?v=ynktQmHLZYI">Trailer auf YouTube</a>
+                </li>
+                <li><strong>The Rain</strong> – Diese Serie folgt einer Gruppe von Überlebenden, die versuchen, die Wahrheit hinter einem mysteriösen Regen zu entdecken und dabei in einer feindlichen Welt ums Überleben kämpfen.<br>
+                    Ansehen auf: Netflix<br>
+                    <a href="https://www.youtube.com/watch?v=9dpb5JYoXiI">Trailer auf YouTube</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Raffael Bauer<br>
+        <a href="https://raffaelbauer.github.io/Impressum/">Impressum</a> | 
+        <a href="https://raffaelbauer.github.io/Datenschutzbestimmungen/">Datenschutzbestimmungen</a>
+    </footer>
+</body>
+</html>
