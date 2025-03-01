@@ -10,16 +10,19 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #1e1e1e;
+            color: #f5f5f5;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
-            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            background: linear-gradient(135deg, #ff8c00, #ff4500);
             color: #fff;
             padding: 4rem 2rem;
             text-align: center;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
         header h1 {
             font-size: 4rem;
@@ -31,22 +34,23 @@
             max-width: 1200px;
             margin: 3rem auto;
             padding: 0 2rem;
+            flex: 1;
         }
         .category {
-            background-color: #fff;
+            background-color: #2c2c2c;
             border-radius: 15px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
             padding: 3rem;
             margin-bottom: 4rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .category:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
         }
         .category h2 {
             font-size: 3rem;
-            color: #2c3e50;
+            color: #ff8c00;
             margin-bottom: 2rem;
             text-transform: uppercase;
             font-weight: 600;
@@ -60,59 +64,50 @@
             margin-bottom: 2.5rem;
             display: flex;
             flex-direction: column;
+            background: #3a3a3a;
+            padding: 1rem;
+            border-radius: 10px;
         }
         .category li strong {
-            color: #1abc9c;
+            color: #ff8c00;
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
         .category li span {
             margin-top: 0.5rem;
             font-size: 1.1rem;
         }
         .category a {
-            color: #3498db;
+            color: #ff4500;
             text-decoration: none;
             font-weight: 600;
-            border: 2px solid #3498db;
+            border: 2px solid #ff4500;
             padding: 8px 16px;
             border-radius: 25px;
             transition: all 0.3s ease;
             margin-top: 1rem;
             display: inline-block;
+            text-align: center;
         }
         .category a:hover {
             color: #fff;
-            background-color: #3498db;
-            border-color: #3498db;
+            background-color: #ff4500;
+            border-color: #ff4500;
         }
         footer {
-            background-color: #34495e;
-            color: #fff;
             text-align: center;
-            padding: 3rem 2rem;
-            box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            background: none;
+            color: #f5f5f5;
+            font-size: 1rem;
         }
         footer a {
-            color: #1abc9c;
+            color: #ff8c00;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 10px;
-            transition: color 0.3s ease;
         }
         footer a:hover {
-            color: #fff;
             text-decoration: underline;
-        }
-        .category li:nth-child(odd) {
-            background-color: #f7f7f7;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .category li:nth-child(even) {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 8px;
         }
     </style>
 </head>
@@ -121,52 +116,92 @@
         <h1>Raffaels Film- und Serienempfehlungen</h1>
     </header>
     <main>
-        <!-- Filme -->
         <div class="category">
             <h2>Filme</h2>
             <ul>
                 <li>
-                    <strong>The Green Mile</strong> – Ein emotionales Drama über einen Gefängnisinsassen mit übernatürlichen Kräften.<br>
+                    <strong>The Green Mile</strong> – Ein berührendes Drama über einen Gefängniswärter, der mit einem außergewöhnlichen Insassen konfrontiert wird. Dieser besitzt übernatürliche Fähigkeiten, die sein Weltbild erschüttern.<br>
+                    <span><strong>Altersempfehlung:</strong> Wird empfohlen für Zuschauer ab 12 Jahren.</span><br>
                     <span>Ansehen auf: Prime Video, Apple TV, Google Play Movies, Magenta TV</span><br>
-                    <a href="https://www.youtube.com/watch?v=6h8bT50qZjA">Trailer auf YouTube</a>
+                    <a href="https://www.youtube.com/watch?v=ctRK-4Vt7dA">Trailer auf YouTube</a>
+                </li>
+                            <li>
+                    <strong>Hangover 1, 2 & 3</strong> – Drei Freunde erleben nach wilden Partynächten chaotische und witzige Abenteuer. Während sie versuchen, sich an die vergangenen Ereignisse zu erinnern, geraten sie in immer verrücktere Situationen.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 16 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video, Google Play Movies</span><br>
+                    <a href="https://www.youtube.com/watch?v=tcdUhdOlz9M">Trailer auf YouTube</a>
                 </li>
                 <li>
-                    <strong>The Hangover 1, 2 & 3</strong> – Chaotische Abenteuer einer Gruppe von Freunden nach einem verlorenen Junggesellenabschied.<br>
-                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video, Google Movies</span><br>
-                    <a href="https://www.youtube.com/watch?v=tcdUhdOlz9M">Trailer von The Hangover</a>
-                </li>
-                <li>
-                    <strong>Interstate 60</strong> – Ein junger Mann, der auf einer seltsamen Reise durch Amerika neue Perspektiven auf das Leben und seine Zukunft entdeckt, alles beeinflusst von einem geheimnisvollen Fremden.<br>
+                    <strong>Interstate 60</strong> – Eine geheimnisvolle Straße, die auf keiner Karte existiert, führt einen jungen Mann auf eine surreale Reise voller skurriler Begegnungen. Ein tiefgründiger Film über Entscheidungen und das Schicksal.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 12 Jahren.</span><br>
                     <span>Ansehen auf: DVD oder illegale Webseiten</span><br>
                     <a href="https://www.youtube.com/watch?v=E5w7go9kPEo">Trailer auf YouTube</a>
                 </li>
+                <li>
+                    <strong>Leave the World Behind</strong> – Ein Mystery-Thriller über eine Familie, die in einem abgelegenen Haus von unerwarteten Besuchern und mysteriösen Ereignissen überrascht wird. Der Film spielt mit Ängsten und lässt das Publikum mit offenen Fragen zurück. Hinweis von Raffael: Der Film hat ein Offenes Ende, wer damit nicht umgehen kan sollte den Film besser nicht schauen<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 16 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix</span><br>
+                    <a href="https://www.youtube.com/watch?v=YAYBhLFT9tw">Trailer auf YouTube</a>
+                </li>
+                <li>
+                    <strong>Mr. Poppers Pinguine</strong> – Eine lustige Familienkomödie über einen Mann, dessen Leben durch sechs Pinguine komplett durcheinandergebracht wird. Während er sich anfangs über die Tiere ärgert, lernt er schließlich, was im Leben wirklich zählt.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 6 Jahren.</span><br>
+                    <span>Ansehen auf: Disney+, Apple TV, Amazon Video, Google Play Movies</span><br>
+                    <a href="https://www.youtube.com/watch?v=GBVTtaJbcdA">Trailer auf YouTube</a>
+                </li>
+                <li>
+                    <strong>Der Junge im gestreiften Pyjama</strong> – Eine tragische Geschichte über die Freundschaft zwischen zwei Jungen während des Zweiten Weltkriegs. Achtung: Kann für einige Zuschauer als sehr brutal empfunden werden.Hinweis von Raffael: In dem Film geht es darum wie Juden gezielt von den Nazis umgebracht werden wer damit nicht umgehen kan sollte den Film besser nich anschauen.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 12 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video, Google Play Movies, Paramount+</span><br>
+                    <a href="https://www.youtube.com/watch?v=x4YqjYxk1jQ">Trailer auf YouTube</a>
+                </li>
+                <li>
+                    <strong>School Survival – Die schlimmsten Jahre meines Lebens</strong> – Ein rebellischer Teenager kämpft gegen die strengen Regeln seiner Schule und findet kreative Wege, um sich gegen das System aufzulehnen.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 10 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix</span><br>
+                    <a href="https://www.youtube.com/watch?v=wPzXhR-MBNg">Trailer auf YouTube</a>
+                </li>
+                <li>
+                    <strong>Knallharte Jungs</strong> – Eine freche deutsche Komödie über die Herausforderungen der Pubertät.Hinweis von Raffael der Film hat viele anstössige Szenen ich empfehle sich zweimal zu überlegen mit wen man den Film ansehen will.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 16 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video, Google Play Movies</span><br>
+                    <a href="https://www.youtube.com/watch?v=6wAvh-eZrxo">Trailer auf YouTube</a>
+                </li>
+                <li>
+                    <strong>Steig nicht aus!</strong> – Ein packender Thriller, in dem ein Mann gezwungen wird, in seinem Auto zu bleiben, da eine Bombe unter seinem Sitz explodieren könnte.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 12 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video, Magenta TV, Google Play Movies</span><br>
+                    <a href="https://www.youtube.com/watch?v=DF_yQVsauEg">Trailer auf YouTube</a>
+                </li>
             </ul>
         </div>
-
-        <!-- Serien -->
         <div class="category">
             <h2>Serien</h2>
             <ul>
                 <li>
-                    <strong>Manifest</strong> – Ein packender Thriller über ein Flugzeug, das nach fünf Jahren plötzlich ohne Erklärung zurückkehrt. Die Passagiere müssen sich mit den Folgen und den geheimen Kräften auseinandersetzen, die ihr Leben beeinflussen.<br>
-                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video</span><br>
-                    <a href="https://www.youtube.com/watch?v=Oiyf7QsEgwE">Trailer auf YouTube</a>
-                </li>
-                <li>
-                    <strong>The End of the F***ing World</strong> – Die düstere, aber humorvolle Serie über die Reise von zwei Jugendlichen, die sich auf einem dunklen Abenteuer wiederfinden und sich selbst und ihre Beziehung hinterfragen.<br>
+                    <strong>The End of the F***ing World</strong> – Zwei Teenager mit komplizierten Persönlichkeiten begeben sich auf eine düstere Reise. Sie wollen dem eintönigen Alltag entfliehen, finden dabei jedoch heraus, dass sie mehr verbindet als gedacht.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 16 Jahren.</span><br>
                     <span>Ansehen auf: Netflix</span><br>
                     <a href="https://www.youtube.com/watch?v=ynktQmHLZYI">Trailer auf YouTube</a>
                 </li>
                 <li>
-                    <strong>The Rain</strong> – Diese Serie folgt einer Gruppe von Überlebenden, die versuchen, die Wahrheit hinter einem mysteriösen Regen zu entdecken und dabei in einer feindlichen Welt ums Überleben kämpfen.<br>
+                    <strong>The Rain</strong> – Eine postapokalyptische Serie, in der eine Gruppe Überlebender gegen eine tödliche Seuche kämpft, die durch Regen übertragen wird. Ein nervenaufreibender Überlebenskampf beginnt.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 16 Jahren.</span><br>
                     <span>Ansehen auf: Netflix</span><br>
-                    <a href="https://www.youtube.com/watch?v=Q6oR6t7RVU4">Trailer auf YouTube</a>
+                    <a href="https://www.youtube.com/watch?v=stgIm8oVqTc">Trailer auf YouTube</a>
+                </li>
+                <li>
+                    <strong>Manifest</strong> – Ein Flugzeug verschwindet für fünf Jahre und kehrt zurück – doch für die Passagiere ist keine Zeit vergangen. Sie erhalten geheimnisvolle Visionen und versuchen, das Rätsel zu lösen.<br>
+                    <span><strong>Altersempfehlung:</strong> Ab 12 Jahren.</span><br>
+                    <span>Ansehen auf: Netflix, Apple TV, Amazon Video</span><br>
+                    <a href="https://www.youtube.com/watch?v=Oiyf7QsEgwE">Trailer auf YouTube</a>
                 </li>
             </ul>
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 Raffael Bauer. Alle Rechte vorbehalten. | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+        <p>&copy; 2025 Raffael Bauer. Alle Rechte vorbehalten.</p>
+        <p><a href="https://raffaelbauer.github.io/Datenschutzerklaerung/">Datenschutzbestimmungen</a></p>
     </footer>
 </body>
 </html>
